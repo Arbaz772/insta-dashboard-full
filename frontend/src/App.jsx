@@ -262,7 +262,8 @@ export default function App() {
                   <div className="text-sm text-gray-700 whitespace-pre-wrap">{caption || "Your caption will appear here."}</div>
                 </div>
 
-                <div className="mt-3 text-xs text-gray-500">Tip: keep captions <= 2,200 characters. Instagram shows ~125 chars before a "more" link.</div>
+                <div className="mt-3 text-xs text-gray-500">Tip: keep captions {"<= 2,200"} characters. Instagram shows ~125 chars before a "more" link.</div>
+
               </div>
 
               <div className="border rounded p-4">
