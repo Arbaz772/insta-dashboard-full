@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  insta-jokes:
+    build: .
+    image: insta-jokes:latest
+    container_name: insta-jokes
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./outputs:/app/outputs
+      - ./assets:/app/assets
+    ports:
+      - "8080:8080"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

@@ -1,0 +1,6 @@
+moviepy
+numpy
+Pillow
+requests
+python-dotenv
+instagrapi
